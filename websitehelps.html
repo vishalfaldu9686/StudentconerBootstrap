@@ -95,8 +95,9 @@
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Data Save Is Suceesfull..."))
+                .then(response => swal("Good job!", "You clicked the button!", "success"));
                 .catch(error => console.error('Error!', error.message))
+              
             })
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
