@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="about.css">
+          <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="Animate.css">
+        <link style="border-radius: 50%; border: 3px solid black;" rel="icon" href="OIP.jfif"/>
+        <title style="font-size: 29px;">Studentconer</title>
+      </head>
+      <body style="width:100%; height: 71vh; background-image: url(photo-1429497627149-e7839eef4fdb\ \(1\).jfif); background-size: cover; background-repeat: no-repeat;">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand animate__animated animate__heartBeat" style="margin-right: 15px; margin-top: 5px; color: rgb(255, 255, 255); margin-top: 0px;">StudentConer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active ">
+                      <a class="nav-link " aria-current="page" href="website.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Student Info</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Help
+                      </a>
+                      <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="studenthelp.html">Student Helps</a></li>
+                        <li><a class="dropdown-item" href="techerhelps.html">Techers Helps</a></li>
+                        <li><a class="dropdown-item" href="websitehelps.html">Website Helps</a></li>
+      
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+            
+            <div class="modalcontact" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content" style="border:3px solid black ;" >
+                  <div class="modal-header" style="box-shadow: inset 5px 5px 4px 2px rgb(90, 87, 87);">
+                    <h5 class="modal-title">Web_developer Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container" >
+                      <form class="row g-3 needs-validation"  method="POST" autocomplete="off" name="google-sheet"> 
+                        <div class="md-3">
+                          <label for="validationCustom01" class="form-label">Email Id </label>
+                          <input type="email" class="form-control" name="Email Id" id="validationemail" placeholder="Enter Your Email Id " value="" required>
+                        </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Web_developer Helps Description</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="Description" rows="3"placeholder="Enter The Massage You." required></textarea>
+                      </div>
+                  
+                </div>
+                <div class="modal-footer" style="box-shadow: inset 5px 5px 4px 2px rgb(224, 221, 221);">
+                  <button class="btn btn-success" type="submit">Submit</button>
+                  <button class="btn btn-primary" type="reset">Clear</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="website.html" style="color: blanchedalmond; text-decoration: none;"> Close </a></button>
+                
+                </div>
+              </div>
+            </form>
+            </div>
+</div>
+</div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwC-KShhUn7G_E8YjgKLLS4cBfCOVQn_fOt-eiaiuHE3ePR8HPR/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Data Save Is Suceesfull..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+            <div class="container-fluid d-flex my-5"  style="justify-content: space-between; justify-content: space-around;border-top: 3px solid rgba(150, 145, 145, 0.9); border: solid 10px rgb(4, 217, 255); border-bottom: 3px solid rgba(7, 7, 7, 0.9); background-color: rgba(2,3,4,0.1); border-radius: 100px;">
+              <div class="w3-col l3 m6 s12">
+                <div class="top10 ">
+                <h2 style="color:rgb(233, 37, 37);"> Top Tutorials</h2>
+                <a href="https://www.w3schools.com/html/default.asp">HTML Tutorial</a><br>
+                <a href="https://www.w3schools.com/css/default.asp">CSS Tutorial</a><br>
+                <a href="https://www.w3schools.com/js/default.asp">JavaScript Tutorial</a><br>
+                <a href="https://www.w3schools.com/howto/default.asp">How To Tutorial</a><br>
+                <a href="https://www.w3schools.com/sql/default.asp">SQL Tutorial</a><br>
+                <a href="https://www.w3schools.com/python/default.asp">Python Tutorial</a><br>
+                <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS Tutorial</a><br>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Bootstrap Tutorial</a><br>
+                <a href="https://www.w3schools.com/php/default.asp">PHP Tutorial</a><br>
+                <a href="https://www.w3schools.com/java/default.asp">Java Tutorial</a><br>
+                <a href="https://www.w3schools.com/cpp/default.asp">C++ Tutorial</a><br>
+                <a href="https://www.w3schools.com/jquery/default.asp">jQuery Tutorial</a><br>
+                </div>
+                </div>
+            
+                <div class="w3-col l3 m6 s12">
+                  <div class="top10">
+                  <h2 style="color:rgb(165, 240, 25);">Top References</h2>
+                  <a href="https://www.w3schools.com/tags/default.asp">HTML Reference</a><br>
+                  <a href="https://www.w3schools.com/cssref/default.asp">CSS Reference</a><br>
+                  <a href="https://www.w3schools.com/jsref/default.asp">JavaScript Reference</a><br>
+                  <a href="https://www.w3schools.com/sql/sql_ref_keywords.asp">SQL Reference</a><br>
+                  <a href="https://www.w3schools.com/python/python_reference.asp">Python Reference</a><br>
+                  <a href="https://www.w3schools.com/w3css/w3css_references.asp">W3.CSS Reference</a><br>
+                  <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap Reference</a><br>
+                  <a href="https://www.w3schools.com/php/php_ref_overview.asp">PHP Reference</a><br>
+                  <a href="https://www.w3schools.com/colors/colors_names.asp">HTML Colors</a><br>
+                  <a href="https://www.w3schools.com/java/java_ref_keywords.asp">Java Reference</a><br>
+                  <a href="https://www.w3schools.com/angular/angular_ref_directives.asp">Angular Reference</a><br>
+                  <a href="https://www.w3schools.com/jquery/jquery_ref_overview.asp">jQuery Reference</a><br>
+                  </div>
+                  </div>
+            
+                  <div class="w3-col l3 m6 s12">
+                    <div class="top10">
+                    <h2 style="color:rgb(54, 50, 50);">Top Examples</h2>
+                    <a href="https://www.w3schools.com/html/html_examples.asp">HTML Examples</a><br>
+                    <a href="https://www.w3schools.com/css/css_examples.asp">CSS Examples</a><br>
+                    <a href="https://www.w3schools.com/js/js_examples.asp">JavaScript Examples</a><br>
+                    <a href="https://www.w3schools.com/howto/default.asp">How To Examples</a><br>
+                    <a href="https://www.w3schools.com/sql/sql_examples.asp">SQL Examples</a><br>
+                    <a href="https://www.w3schools.com/python/python_examples.asp">Python Examples</a><br>
+                    <a href="https://www.w3schools.com/w3css/w3css_examples.asp">W3.CSS Examples</a><br>
+                    <a href="https://www.w3schools.com/bootstrap/bootstrap_examples.asp">Bootstrap Examples</a><br>
+                    <a href="https://www.w3schools.com/php/php_examples.asp">PHP Examples</a><br>
+                    <a href="https://www.w3schools.com/java/java_examples.asp">Java Examples</a><br>
+                    <a href="https://www.w3schools.com/xml/xml_examples.asp">XML Examples</a><br>
+                    <a href="https://www.w3schools.com/jquery/jquery_examples.asp">jQuery Examples</a><br>
+                    </div>
+                    </div>
+            
+                    <div class="w3-col l3 m6 s12">
+                      <div class="top10">
+                      <!--
+                      <h4>Web Certificates</h4>
+                      <a href="/cert/default.asp">HTML Certificate</a><br>
+                      <a href="/cert/default.asp">CSS Certificate</a><br>
+                      <a href="/cert/default.asp">JavaScript Certificate</a><br>
+                      <a href="/cert/default.asp">SQL Certificate</a><br>
+                      <a href="/cert/default.asp">Python Certificate</a><br>
+                      <a href="/cert/default.asp">PHP Certificate</a><br>
+                      <a href="/cert/default.asp">Bootstrap Certificate</a><br>
+                      <a href="/cert/default.asp">XML Certificate</a><br>
+                      <a href="/cert/default.asp">jQuery Certificate</a><br>
+                      <a href="//www.w3schools.com/cert/default.asp" class="w3-button w3-margin-top w3-dark-grey" style="text-decoration:none">
+                      Get Certified &raquo;</a>
+                      -->
+                      
+                      <h2 style="color:rgb(5, 190, 236);">Web Courses</h2>
+                      <a href="https://courses.w3schools.com/courses/html" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on html course link in footer');">HTML Course</a><br>
+                      <a href="https://courses.w3schools.com/courses/css" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on css course link in footer');">CSS Course</a><br>
+                      <a href="https://courses.w3schools.com/courses/javascript" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on javascript course link in footer');">JavaScript Course</a><br>
+                      <a href="https://courses.w3schools.com/programs/front-end" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on Front End course link in footer');">Front End Course</a><br>
+                      <a href="https://courses.w3schools.com/courses/sql" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on sql course link in footer');">SQL Course</a><br>
+                      <a href="https://courses.w3schools.com/courses/python" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on python course link in footer');">Python Course</a><br>
+                      <a href="https://courses.w3schools.com/courses/php" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on php course link in footer');">PHP Course</a><br>
+                      <a href="https://courses.w3schools.com/courses/jquery" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on jquery course link in footer');">jQuery Course</a><br>
+                      <a href="https://courses.w3schools.com/courses/java" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on Java course link in footer');">Java Course</a><br>
+                      <a href="https://courses.w3schools.com/courses/cplusplus" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on C++ course link in footer');">C++ Course</a><br>
+                      <a href="https://courses.w3schools.com/courses/c-sharp" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on bootstrap C# link in footer');">C# Course</a><br>
+                      <a href="https://courses.w3schools.com/courses/xml" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on xml course link in footer');">XML Course</a><br>
+                      <a href="https://courses.w3schools.com/" target="_blank" class="w3-button w3-margin-top w3-dark-grey w3-round" style="text-decoration:none" onclick="ga('send', 'event', 'Courses' , 'Clicked on get certified button in footer');">
+                      Get Certified »</a>
+                      
+                      
+                      </div>
+                      <button id="p"><a href="website.html" id="j" >Go To Home </a></button>
+                      </div>
+            
+            
+             </div>
+             <div class="container-fluid" style=" font-size:20px; ">
+              <div class="w3-center w3-small w3-opacity">
+                Studentconer is optimized for learning and training. Examples might be simplified to improve reading and learning.
+                Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+                While using StudentConer, you agree to have read and accepted our <a href="/about/about_copyright.asp">terms of use</a>, 
+                <a href="/about/about_privacy.asp">cookie and privacy policy</a>.<br><br>
+                <div class="container d-flex " style="justify-content: center;">
+                <a href="/about/about_copyright.asp">Copyright 1900-2021 </a> <br>
+                <p>by Refsnes Data. All Rights Reserved.</p>
+                </div>
+                <div class="container d-flex" style="justify-content: center;">
+                <p>StudentConer is Powered by All ViewPort</p><br><br>
+                </div>
+                <div class="container d-flex" style="justify-content:center;">
+                <img style="width:200px;height:200px;border:0" src="OIP.jfif" alt="StudentConer.com"></a>
+                </div>
+                <div class="container d-flex"style="justify-content:center">
+                <p style="font-size: 20px; color: rgba(0,0,0,0.9);">StudentConer</p>
+                </div>
+                </div>
+             </div>
+           
+            
+            <!doctype html>
+      <html lang="en">
+        <head>
+          <!-- Required meta tags -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+          <!-- Bootstrap CSS -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+      
+          <title>Student Website</title>
+        </head>
+        <body>
+      
+      
+          <!-- Optional JavaScript; choose one of the two! -->
+      
+          <!-- Option 1: Bootstrap Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      
+          <!-- Option 2: Separate Popper and Bootstrap JS -->
+          <!--
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+          -->
+        </body>
+      </html>
+      </body>
+      </html>
