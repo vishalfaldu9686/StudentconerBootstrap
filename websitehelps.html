@@ -95,7 +95,7 @@
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => swal("Good job!", "You clicked the button!", "success"))
+                .then(response => alert("Thanks for Data Save Is Suceesfull..."))
                 .catch(error => console.error('Error!', error.message))
               
             })
