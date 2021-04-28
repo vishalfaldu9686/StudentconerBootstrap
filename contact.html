@@ -67,7 +67,7 @@
                   </div>
                   <div class="modal-body">
                     <div class="container" >
-                      <form class="row g-3 needs-validation" >
+                      <form class="row g-3 needs-validation" autocomplete="off" method="POST" name="google-sheet" >
                         <div class="col-md-11">
                           <label for="validationCustom01" class="form-label">First name</label>
                           <input type="text" class="form-control" name="First Name" placeholder="Enter Your First Name" value="" required>
@@ -148,7 +148,20 @@
             </form>
             </div>
 
-           
+           <script>
+              const scriptURL = 'https://script.google.com/macros/s/AKfycbwJn3XXCunTm2hSiwj_etDdFgI_KD3JFwafDlCAjQeKNpNzJXY/exec'
+                        const form = document.forms['google-sheet']
+                      
+                        form.addEventListener('submit', e => {
+                          e.preventDefault()
+                          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                            .then(response => alert("Thanks for Data Save Is Suceesfull..."))
+                            .catch(error => console.error('Error!', error.message))
+                        })
+              </script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+              
               
 
 
